@@ -9,3 +9,26 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     };
 });
+function hideButton() {
+    window.scrollTo({
+        top: 0
+    });
+}
+function wpHidden() {
+    if(window.scrollY === 0) {
+        document.querySelector('.whatsapp-container').style.display = 'none';
+    } else {
+        document.querySelector('.whatsapp-container').style.display = 'block';
+    }
+}
+function buttonHidden() {
+    if(window.scrollY === 0) {
+        document.querySelector('.botaorolagem').style.display = 'none';
+    } else {
+        document.querySelector('.botaorolagem').style.display = 'block';
+    }
+}
+
+
+window.addEventListener('scroll', buttonHidden);
+window.addEventListener('scroll', wpHidden);

@@ -1,11 +1,25 @@
 * {
     font-family: arial;
+    scroll-behavior: smooth;
 }
 
 body {
     margin: 0px;
     padding: 0px;
 
+}
+
+.botaorolagem {
+    position: fixed;
+    width: 90px;
+    height: 50px;
+    z-index: 999;
+    right: 28px;
+    bottom: 120px;
+    background-image: url(../image/voltar-ao-topo.png);
+    background-size: contain;
+    background-position: top;
+    cursor: pointer;
 }
 
 .whatsapp-container {
